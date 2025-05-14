@@ -53,6 +53,14 @@
         a:hover {
             text-decoration: underline;
         }
+        .antes-despues{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .multimedia{
+            margin: 10px;
+        }
     </style>
 </head>
 <body>
@@ -76,16 +84,19 @@
         <section>
             <h2>¿Cómo usar PixVerse AI?</h2>
             <p>Visita el sitio oficial de <a href="https://app.pixverse.ai" target="_blank">PixVerse AI</a>, regístrate y comienza a crear tus videos de manera intuitiva.</p>
-            <h3>Antes</h3>
-            <img src="img/imgAntes.jpeg">
-            <h3>Despues</h3>
-            <video width="640" height="360" controls>
-                <h3>Antes</h3>
-                <img src="src/imgAntes.jpeg">
-                <h3>Despues</h3>
-                <source src="img/pixverse.mp4" type="video/mp4">
-                Tu navegador no soporta la reproducción de video.
-            </video>
+            <div class="antes-despues">
+                <div class="multimedia">
+                    <h3>Antes</h3>
+                    <img src="img/imgAntes.jpeg" width="auto" height="640">
+                </div>
+                <div class="multimedia">
+                    <h3>Despues</h3>
+                    <video width="auto" height="640" controls>
+                        <source src="img/pixverse.mp4" type="video/mp4">
+                        Tu navegador no soporta la reproducción de video.
+                    </video>
+                </div>
+            </div>
         </section>
         <section>
             <h2>Conclusión</h2>
