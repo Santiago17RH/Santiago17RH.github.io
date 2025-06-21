@@ -3,146 +3,172 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Portafolio - Santiago Ramírez Hurtado</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <title>Portafolio de Santiago Ramírez Hurtado</title>
   <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: 'Inter', sans-serif;
-    }
-
     body {
-      background-color: #f4f4f4;
-      color: #333;
-      line-height: 1.6;
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      background-color: #ffffff;
+      color: #000000;
     }
-
     header {
-      background-color: #1f2937;
-      color: #fff;
-      padding: 2rem;
+      background-color: #1e293b;
+      padding: 1.5rem;
       text-align: center;
     }
-
     header h1 {
+      margin: 0;
       font-size: 2rem;
+      color: white;
     }
-
-    header p {
-      font-size: 1rem;
-      margin-top: 0.5rem;
-    }
-
-    main {
-      max-width: 900px;
-      margin: 2rem auto;
-      padding: 1rem;
-      background: #fff;
-      border-radius: 8px;
-    }
-
-    section {
-      margin-bottom: 2rem;
-    }
-
-    h2 {
-      color: #1f2937;
-      margin-bottom: 1rem;
-      border-bottom: 2px solid #ddd;
-      padding-bottom: 0.5rem;
-    }
-
-    ul {
-      padding-left: 1.5rem;
-    }
-
-    li {
-      margin-bottom: 0.5rem;
-    }
-
-    .links a {
-      color: #2563eb;
+    a{
       text-decoration: none;
-      margin-right: 1rem;
+      color: black;
     }
-
+    a:hover{
+      color: #38bdf8;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      background-color: #334155;
+      padding: 1rem;
+    }
+    nav button {
+      background: none;
+      border: none;
+      color: #f1f5f9;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+    nav button:hover {
+      color: #38bdf8;
+    }
+    section {
+      display: none;
+      padding: 2rem;
+      max-width: 800px;
+      margin: auto;
+      margin-top: 10px;
+      animation: fadeIn 0.5s ease-in-out;
+      box-shadow: 1px 1px 10px 1px  rgb(200, 200, 200);
+      border-radius: 10px;
+    }
+    section.active {
+      display: block;
+    }
+    h2 {
+      color: #38bdf8;
+    }
+    ul {
+      padding-left: 1.2rem;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
     footer {
       text-align: center;
-      padding: 2rem;
-      color: #666;
+      padding: 1rem;
+      background-color: #1e293b;
+      font-size: 0.9rem;
     }
   </style>
 </head>
 <body>
   <header>
     <h1>Santiago Ramírez Hurtado</h1>
-    <p>Desarrollador Backend / Frontend Junior</p>
-    <p>📍 Bogotá, Colombia | 📞 302 397 0523 | ✉️ santiagoramirezh@hotmail.com</p>
-    <div class="links">
-      <a href="https://www.linkedin.com/in/santiago-ram%C3%ADrez-hurtado-31b3b9300/" target="_blank">LinkedIn</a>
-    </div>
+    <p style="color: white;">Desarrollador Backend y Frontend Jr. | Bogotá, Colombia</p>
   </header>
+  <nav>
+    <button onclick="showSection('perfil')">Perfil</button>
+    <button onclick="showSection('habilidades')">Habilidades</button>
+    <button onclick="showSection('experiencia')">Experiencia</button>
+    <button onclick="showSection('proyectos')">Proyectos</button>
+    <button onclick="showSection('formacion')">Formación</button>
+    <button onclick="showSection('contacto')">Contacto</button>
+  </nav>
 
-  <main>
-    <section>
-      <h2>Perfil Profesional</h2>
-      <p>Técnico en programación de software con formación en Ingeniería de Sistemas. Experiencia en desarrollo backend y fullstack con Node.js, Express, MySQL, React y Next.js. Enfocado en el desarrollo de APIs REST, diseño modular, escalable y buenas prácticas.</p>
-    </section>
+  <section id="perfil" class="active">
+    <h2>Perfil Profesional</h2>
+    <p>
+      Técnico en programación de software con formación universitaria en curso (Ingeniería de Sistemas, Universidad Central). Experiencia en desarrollo backend y fullstack utilizando tecnologías como Node.js, Express, MySQL, JavaScript, React, y Next.js. Enfoque en el desarrollo de APIs RESTful, soluciones modulares, escalables y orientadas a resultados.
+Habilidades en trabajo colaborativo, metodologías ágiles (Scrum), comunicación asertiva y pensamiento analítico. Busco contribuir con soluciones innovadoras y eficientes en entornos reales de desarrollo.
+    </p>
+  </section>
 
-    <section>
-      <h2>Habilidades Técnicas</h2>
-      <ul>
-        <li>Lenguajes: JavaScript, HTML, CSS</li>
-        <li>Backend: Node.js, Express, APIs REST, middlewares</li>
-        <li>Frontend: React.js, Next.js, diseño responsive</li>
-        <li>Bases de datos: MySQL, consultas SQL</li>
-        <li>Control de versiones: Git, GitHub</li>
-        <li>Herramientas: Postman, Trello, JWT</li>
-      </ul>
-    </section>
+  <section id="habilidades">
+    <h2>Habilidades Técnicas</h2>
+    <ul>
+      <li>Node.js, Express</li>
+      <li>MySQL</li>
+      <li>JavaScript</li>
+      <li>React, Next.js</li>
+      <li>HTML, CSS</li>
+      <li>Git y control de versiones</li>
+    </ul>
+    <h2>Habilidades Blandas</h2>
+    <ul>
+      <li>Pensamiento crítico</li>
+      <li>Comunicación asertiva</li>
+      <li>Trabajo en equipo</li>
+      <li>Proactividad</li>
+      <li>Gestión del tiempo</li>
+      <li>Adaptabilidad</li>
+      <li>Aprendizaje continuo</li>
+    </ul>
+  </section>
 
-    <section>
-      <h2>Experiencia Profesional</h2>
-      <p><strong>Practicante Técnico – SENA / FXA</strong></p>
-      <ul>
-        <li>Desarrollé un sistema de gestión de actas con firma digital usando Node.js y MySQL.</li>
-        <li>Reemplacé un sistema de bodega inestable por uno con dashboard interactivo.</li>
-        <li>Facilité el seguimiento de paquetes y control de entregas en tiendas.</li>
-      </ul>
-    </section>
+  <section id="experiencia">
+    <h2>Experiencia Profesional</h2>
+    <p><strong>Practicante técnico en desarrollo de software – SENA (FXA)</strong></p>
+    <p><strong>Fecha (octubre/2023 – marzo/2024)</strong></p>
+    <ul>
+      <li>Desarrollo de sistema backend de gestión de actas de entrega con firma digital.</li>
+      <li>Optimización de entrega de dispositivos reduciendo errores de documentación.</li>
+      <li>Reemplazo de software inestable por solución escalable con dashboard y seguimiento.</li>
+      <li>Responsable del backend y la arquitectura escalable del sistema.</li>
+    </ul>
+  </section>
 
-    <section>
-      <h2>Proyectos Personales</h2>
-      <p><strong>Marketplace tipo Mercado Libre</strong></p>
-      <ul>
-        <li>Frontend con React y Next.js con diseño responsivo.</li>
-        <li>Arquitectura modular preparada para autenticación, pasarela de pago y dashboard.</li>
-      </ul>
-    </section>
+  <section id="proyectos">
+    <h2>Proyectos Personales</h2>
+    <p><strong>Tienda online tipo marketplace (en desarrollo)</strong></p>
+    <ul>
+      <li>Frontend en React y Next.js con diseño adaptativo y rápido.</li>
+      <li>Arquitectura modular y escalable para integración con backend y pagos.</li>
+      <li>Aplicación de buenas prácticas UX y rendimiento.</li>
+    </ul>
+  </section>
 
-    <section>
-      <h2>Formación Académica</h2>
-      <ul>
-        <li>Ingeniería de Sistemas – Universidad Central (En curso)</li>
-        <li>Técnico en Programación de Software – SENA</li>
-        <li>Diplomado en Desarrollo de Aplicaciones Móviles</li>
-      </ul>
-    </section>
+  <section id="formacion">
+    <h2>Formación Académica</h2>
+    <ul>
+      <li>Ingeniería de Sistemas (en curso) – Universidad Central</li>
+      <li>Técnico en Programación de Software – SENA</li>
+      <li>Diplomado en Desarrollo de Aplicaciones Móviles</li>
+    </ul>
+    <h2>Idiomas</h2>
+    <ul>
+      <li>Español: Nativo</li>
+      <li>Inglés: A2 (en proceso de mejora)</li>
+    </ul>
+  </section>
 
-    <section>
-      <h2>Idiomas</h2>
-      <ul>
-        <li>Español: Nativo</li>
-        <li>Inglés: A2 (en progreso)</li>
-      </ul>
-    </section>
-  </main>
+  <section id="contacto">
+    <h2>Contacto</h2>
+    <p>Email: santiagoramirezh@hotmail.com</p>
+    <p>Tel: 302 397 0523</p>
+    <p>Ubicación: Bogotá, Colombia</p>
+    <a href="https://www.linkedin.com/in/santiago-ram%C3%ADrez-hurtado-31b3b9300/">Linkedin</a>
+  </section>
 
-  <footer>
-    
-  </footer>
+  <script>
+    function showSection(id) {
+      document.querySelectorAll('section').forEach(sec => sec.classList.remove('active'));
+      document.getElementById(id).classList.add('active');
+    }
+  </script>
 </body>
 </html>
