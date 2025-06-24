@@ -3,84 +3,12 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=arrow_forward" />
   <title>Portafolio de Santiago Ramírez Hurtado</title>
-  <style>
-    body {
-      font-family: 'Segoe UI', sans-serif;
-      margin: 0;
-      background-color: #ffffff;
-      color: #000000;
-    }
-    header {
-      background-color: #1e293b;
-      padding: 1.5rem;
-      text-align: center;
-    }
-    header h1 {
-      margin: 0;
-      font-size: 2rem;
-      color: white;
-    }
-    a{
-      text-decoration: none;
-      color: black;
-    }
-    a:hover{
-      color: #38bdf8;
-    }
-    nav {
-      display: flex;
-      justify-content: center;
-      gap: 2rem;
-      background-color: #334155;
-      padding: 1rem;
-    }
-    nav button {
-      background: none;
-      border: none;
-      color: #f1f5f9;
-      font-size: 1rem;
-      cursor: pointer;
-    }
-    nav button:hover {
-      color: #38bdf8;
-    }
-    section {
-      display: none;
-      padding: 2rem;
-      max-width: 800px;
-      margin: auto;
-      margin-top: 10px;
-      animation: fadeIn 0.5s ease-in-out;
-      box-shadow: 1px 1px 10px 1px  rgb(200, 200, 200);
-      border-radius: 10px;
-    }
-    section.active {
-      display: block;
-    }
-    h2 {
-      color: #38bdf8;
-    }
-    ul {
-      padding-left: 1.2rem;
-    }
-    @keyframes fadeIn {
-      from { opacity: 0; transform: translateY(10px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
-    footer {
-      text-align: center;
-      padding: 1rem;
-      background-color: #1e293b;
-      font-size: 0.9rem;
-    }
-  </style>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
 </head>
 <body>
-  <header>
-    <h1>Santiago Ramírez Hurtado</h1>
-    <p style="color: white;">Desarrollador Backend y Frontend Jr. | Bogotá, Colombia</p>
-  </header>
   <nav>
     <button onclick="showSection('perfil')">Perfil</button>
     <button onclick="showSection('habilidades')">Habilidades</button>
@@ -89,6 +17,10 @@
     <button onclick="showSection('formacion')">Formación</button>
     <button onclick="showSection('contacto')">Contacto</button>
   </nav>
+  <header>
+    <h1>Santiago Ramírez Hurtado</h1>
+    <p>Desarrollador Backend y Frontend Jr. | Bogotá, Colombia</p>
+  </header>
 
   <section id="perfil" class="active">
     <h2>Perfil Profesional</h2>
@@ -164,11 +96,74 @@ Habilidades en trabajo colaborativo, metodologías ágiles (Scrum), comunicació
     <a href="https://www.linkedin.com/in/santiago-ram%C3%ADrez-hurtado-31b3b9300/">Linkedin</a>
   </section>
 
-  <script>
-    function showSection(id) {
-      document.querySelectorAll('section').forEach(sec => sec.classList.remove('active'));
-      document.getElementById(id).classList.add('active');
-    }
-  </script>
+  <div class="swiper">
+  <!-- Slides -->
+  <div class="swiper-wrapper">
+    <div class="swiper-slide">
+      <a href="#" class="card-link">
+        <img src="img/react.png" alt="" class="card-image">
+        <p class="badge">Developer</p>
+        <h2 class="card-title">x</h2>
+        <button class="card-button material-symbols-outlined">arrow_forward</button>
+      </a>
+    </div>
+
+    <div class="swiper-slide">
+      <a href="#" class="card-link">
+        <img src="img/mysql.png" alt="" class="card-image">
+        <p class="badge">Developer</p>
+        <h2 class="card-title">x</h2>
+        <button class="card-button material-symbols-outlined">arrow_forward</button>
+      </a>
+    </div>
+
+    <div class="swiper-slide">
+      <a href="#" class="card-link">
+        <img src="img/node.png" alt="" class="card-image">
+        <p class="badge">Developer</p>
+        <h2 class="card-title">x</h2>
+        <button class="card-button material-symbols-outlined">arrow_forward</button>
+      </a>
+    </div>
+
+    
+    <div class="swiper-slide">
+      <a href="#" class="card-link">
+        <img src="img/react.png" alt="" class="card-image">
+        <p class="badge">Developer</p>
+        <h2 class="card-title">X</h2>
+        <button class="card-button material-symbols-outlined">arrow_forward</button>
+      </a>
+    </div>
+
+    <div class="swiper-slide">
+      <a href="#" class="card-link">
+        <img src="img/mysql.png" alt="" class="card-image">
+        <p class="badge">Developer</p>
+        <h2 class="card-title">X</h2>
+        <button class="card-button material-symbols-outlined">arrow_forward</button>
+      </a>
+    </div>
+
+    <div class="swiper-slide">
+      <a href="#" class="card-link">
+        <img src="img/node.png" alt="" class="card-image">
+        <p class="badge">Developer</p>
+        <h2 class="card-title">X</h2>
+        <button class="card-button material-symbols-outlined">arrow_forward</button>
+      </a>
+    </div>
+
+    <!-- Agrega más slides si deseas -->
+  </div>
+
+  <!-- Paginación y botones -->
+  <div class="swiper-pagination"></div>
+  <!-- <div class="swiper-button-prev"></div>
+  <div class="swiper-button-next"></div> -->
+</div>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
