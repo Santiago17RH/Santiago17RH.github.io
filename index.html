@@ -162,7 +162,12 @@ Habilidades en trabajo colaborativo, metodologías ágiles (Scrum), comunicació
   <!-- <div class="swiper-button-prev"></div>
   <div class="swiper-button-next"></div> -->
 </div>
-
+<script>
+    function showSection(id) {
+      document.querySelectorAll('section').forEach(sec => sec.classList.remove('active'));
+      document.getElementById(id).classList.add('active');
+    }
+</script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script src="script.js"></script>
 </body>
