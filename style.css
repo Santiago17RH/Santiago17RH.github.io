@@ -27,6 +27,14 @@
     .swiper-slide{
       /* background-color: #000; */
       padding-left: 5%;
+      width: 250px; 
+      flex-shrink: 0;     
+      flex-shrink: 0;       
+      white-space: nowrap;
+      margin-bottom: 5%;
+    }
+    .swiper-wrapper {
+      transition-timing-function: linear !important;
     }
     .swiper .swiper-slide{
         list-style: none;
