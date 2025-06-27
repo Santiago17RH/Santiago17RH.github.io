@@ -159,15 +159,23 @@ Habilidades en trabajo colaborativo, metodologías ágiles (Scrum), comunicació
 
   <!-- Paginación y botones -->
   <div class="swiper-pagination"></div>
-  <!-- <div class="swiper-button-prev"></div>
-  <div class="swiper-button-next"></div> -->
+  <div class="swiper-button-prev"></div>
+  <div class="swiper-button-next"></div>
 </div>
 <script>
     function showSection(id) {
       document.querySelectorAll('section').forEach(sec => sec.classList.remove('active'));
       document.getElementById(id).classList.add('active');
     }
-</script>
+    const wrapper = document.querySelector('.swiper-wrapper');
+const slides = Array.from(wrapper.children);
+
+slides.forEach(slide => {
+  const clone = slide.cloneNode(true);
+  wrapper.appendChild(clone);
+});
+
+  </script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script src="script.js"></script>
 </body>
