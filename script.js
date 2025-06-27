@@ -1,8 +1,8 @@
 new Swiper('.swiper', {
   loop: true,
   slidesPerView: 3,  // Se adapta al tamaño de las slides
-  spaceBetween: 5,       // Espacio entre slides
-  speed: 2000,            // Velocidad de transición
+  spaceBetween: 20,       // Espacio entre slides
+  speed: 5000,            // Velocidad de transición
   autoplay: {
     delay: 0,             // Sin pausa entre transiciones
     disableOnInteraction: false, // Sigue moviéndose tras interactuar
@@ -15,6 +15,5 @@ new Swiper('.swiper', {
   pagination: {
     el: '.swiper-pagination',
     clickable: true,
-  },
-  navigation: false // No mostrar flechas
+  }
 });
