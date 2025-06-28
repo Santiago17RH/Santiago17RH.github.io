@@ -9,28 +9,36 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
 </head>
 <body>
-  <nav>
-    <button onclick="showSection('perfil')">Perfil</button>
-    <button onclick="showSection('habilidades')">Habilidades</button>
-    <button onclick="showSection('experiencia')">Experiencia</button>
-    <button onclick="showSection('proyectos')">Proyectos</button>
-    <button onclick="showSection('formacion')">Formación</button>
-    <button onclick="showSection('contacto')">Contacto</button>
-  </nav>
+<nav>
+  <button class="menu-toggle">☰</button>
+  <div class="menu">
+    <button onclick="showSection('perfil', event)">Perfil</button>
+    <button onclick="showSection('habilidades', event)">Habilidades</button>
+    <button onclick="showSection('experiencia', event)">Experiencia</button>
+    <button onclick="showSection('proyectos', event)">Proyectos</button>
+    <button onclick="showSection('formacion', event)">Formación</button>
+    <button onclick="showSection('contacto', event)">Contacto</button>
+  </div>
+</nav>
+
+
   <header>
     <h1>Santiago Ramírez Hurtado</h1>
     <p>Desarrollador Backend y Frontend Jr. | Bogotá, Colombia</p>
   </header>
 
   <section id="perfil" class="active">
+  <div class="contenido">
     <h2>Perfil Profesional</h2>
     <p>
       Técnico en programación de software con formación universitaria en curso (Ingeniería de Sistemas, Universidad Central). Experiencia en desarrollo backend y fullstack utilizando tecnologías como Node.js, Express, MySQL, JavaScript, React, y Next.js. Enfoque en el desarrollo de APIs RESTful, soluciones modulares, escalables y orientadas a resultados.
 Habilidades en trabajo colaborativo, metodologías ágiles (Scrum), comunicación asertiva y pensamiento analítico. Busco contribuir con soluciones innovadoras y eficientes en entornos reales de desarrollo.
     </p>
+  </div>
   </section>
 
   <section id="habilidades">
+  <div class="contenido">
     <h2>Habilidades Técnicas</h2>
     <ul>
       <li>Node.js, Express</li>
@@ -50,9 +58,11 @@ Habilidades en trabajo colaborativo, metodologías ágiles (Scrum), comunicació
       <li>Adaptabilidad</li>
       <li>Aprendizaje continuo</li>
     </ul>
+  </div>
   </section>
 
   <section id="experiencia">
+  <div class="contenido">
     <h2>Experiencia Profesional</h2>
     <p><strong>Practicante técnico en desarrollo de software – SENA (FXA)</strong></p>
     <p><strong>Fecha (octubre/2023 – marzo/2024)</strong></p>
@@ -62,9 +72,11 @@ Habilidades en trabajo colaborativo, metodologías ágiles (Scrum), comunicació
       <li>Reemplazo de software inestable por solución escalable con dashboard y seguimiento.</li>
       <li>Responsable del backend y la arquitectura escalable del sistema.</li>
     </ul>
+  </div>
   </section>
 
   <section id="proyectos">
+  <div class="contenido">
     <h2>Proyectos Personales</h2>
     <p><strong>Tienda online tipo marketplace (en desarrollo)</strong></p>
     <ul>
@@ -72,9 +84,11 @@ Habilidades en trabajo colaborativo, metodologías ágiles (Scrum), comunicació
       <li>Arquitectura modular y escalable para integración con backend y pagos.</li>
       <li>Aplicación de buenas prácticas UX y rendimiento.</li>
     </ul>
+  </div>
   </section>
 
   <section id="formacion">
+  <div class="contenido">
     <h2>Formación Académica</h2>
     <ul>
       <li>Ingeniería de Sistemas (en curso) – Universidad Central</li>
@@ -86,21 +100,24 @@ Habilidades en trabajo colaborativo, metodologías ágiles (Scrum), comunicació
       <li>Español: Nativo</li>
       <li>Inglés: A2 (en proceso de mejora)</li>
     </ul>
+  </div>
   </section>
 
   <section id="contacto">
+  <div class="contenido">
     <h2>Contacto</h2>
     <p>Email: santiagoramirezh@hotmail.com</p>
     <p>Tel: 302 397 0523</p>
     <p>Ubicación: Bogotá, Colombia</p>
     <a href="https://www.linkedin.com/in/santiago-ram%C3%ADrez-hurtado-31b3b9300/">Linkedin</a>
+  </div>
   </section>
 
   <div class="swiper">
   <!-- Slides -->
   <div class="swiper-wrapper">
     <div class="swiper-slide">
-      <a href="#" class="card-link">
+      <a href="" class="card-link">
         <img src="img/react.png" alt="" class="card-image">
         <p class="badge">Developer</p>
         <h2 class="card-title">x</h2>
@@ -109,7 +126,7 @@ Habilidades en trabajo colaborativo, metodologías ágiles (Scrum), comunicació
     </div>
 
     <div class="swiper-slide">
-      <a href="#" class="card-link">
+      <a href="" class="card-link">
         <img src="img/mysql.png" alt="" class="card-image">
         <p class="badge">Developer</p>
         <h2 class="card-title">x</h2>
@@ -118,7 +135,7 @@ Habilidades en trabajo colaborativo, metodologías ágiles (Scrum), comunicació
     </div>
 
     <div class="swiper-slide">
-      <a href="#" class="card-link">
+      <a href="" class="card-link">
         <img src="img/node.png" alt="" class="card-image">
         <p class="badge">Developer</p>
         <h2 class="card-title">x</h2>
@@ -128,7 +145,7 @@ Habilidades en trabajo colaborativo, metodologías ágiles (Scrum), comunicació
 
     
     <div class="swiper-slide">
-      <a href="#" class="card-link">
+      <a href="" class="card-link">
         <img src="img/react.png" alt="" class="card-image">
         <p class="badge">Developer</p>
         <h2 class="card-title">X</h2>
@@ -137,7 +154,7 @@ Habilidades en trabajo colaborativo, metodologías ágiles (Scrum), comunicació
     </div>
 
     <div class="swiper-slide">
-      <a href="#" class="card-link">
+      <a href="" class="card-link">
         <img src="img/mysql.png" alt="" class="card-image">
         <p class="badge">Developer</p>
         <h2 class="card-title">X</h2>
@@ -146,7 +163,7 @@ Habilidades en trabajo colaborativo, metodologías ágiles (Scrum), comunicació
     </div>
 
     <div class="swiper-slide">
-      <a href="#" class="card-link">
+      <a href="" class="card-link">
         <img src="img/node.png" alt="" class="card-image">
         <p class="badge">Developer</p>
         <h2 class="card-title">X</h2>
@@ -163,17 +180,48 @@ Habilidades en trabajo colaborativo, metodologías ágiles (Scrum), comunicació
   <div class="swiper-button-next"></div>
 </div>
 <script>
-    function showSection(id) {
-      document.querySelectorAll('section').forEach(sec => sec.classList.remove('active'));
-      document.getElementById(id).classList.add('active');
-    }
-    const wrapper = document.querySelector('.swiper-wrapper');
-const slides = Array.from(wrapper.children);
+  /* para la animacion que no se vea brusca */
+  function showSection(id) {
+  const sections = document.querySelectorAll('section');
+  sections.forEach(sec => sec.classList.remove('active'));
 
-slides.forEach(slide => {
-  const clone = slide.cloneNode(true);
-  wrapper.appendChild(clone);
-});
+  const target = document.getElementById(id);
+  target.classList.add('active');
+
+  // Hacer scroll suave hacia esa sección
+  setTimeout(() => {
+    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }, 100); // Espera para que la animación CSS se aplique primero
+}
+
+  /* hace funcionar el desplegable cuando es responsivo */
+  const toggle = document.querySelector('.menu-toggle');
+  const menu = document.querySelector('.menu');
+
+  toggle.addEventListener('click', () => {
+    menu.classList.toggle('open');
+  });
+  /* navegacion de la barra*/
+   function showSection(id, event) {
+  if (event) event.preventDefault();
+
+  const sections = document.querySelectorAll('section');
+  sections.forEach(sec => {
+    sec.classList.remove('active');
+    sec.style.display = 'none';
+  });
+
+  const target = document.getElementById(id);
+  target.style.display = 'block';
+
+  // Espera que el display se aplique para luego activar transición
+  setTimeout(() => {
+    target.classList.add('active');
+  }, 10);
+}
+
+
+
 
   </script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
