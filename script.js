@@ -15,5 +15,16 @@ new Swiper('.swiper', {
   pagination: {
     el: '.swiper-pagination',
     clickable: true,
+  },
+  breakpoints: {
+    0: { 
+      slidesPerView: 1,
+    },
+    640: { 
+      slidesPerView: 2,
+    },
+    1024: { 
+      slidesPerView: 3,
+    }
   }
 });
