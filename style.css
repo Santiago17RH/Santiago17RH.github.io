@@ -187,6 +187,14 @@ nav {
 .menu {
   display: flex;
   gap: 1rem;
+  overflow: hidden;
+  transition: max-height 1s ease;
+
+}
+
+.menu.open {
+  max-height: 500px;
+  /* Ajusta este valor según el contenido */
 }
 
 .a2 {
@@ -228,15 +236,6 @@ section.active {
   display: block;
   opacity: 1;
   transform: translateY(0);
-}
-
-section.active .contenido {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-section.active {
-  display: block;
 }
 
 h2 {
@@ -308,15 +307,16 @@ footer {
   }
 
   .menu {
-    display: none;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.8s ease;
     flex-direction: column;
-    width: 100%;
-    background-color: #334155;
-    margin-top: 1rem;
   }
 
+  /* Cuando se abre el menú */
   .menu.open {
-    display: flex;
+    max-height: 500px;
+    /* Ajusta este valor según el contenido */
   }
 
   .menu-toggle {
