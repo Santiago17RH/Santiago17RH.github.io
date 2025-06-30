@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -8,223 +9,194 @@
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
 </head>
+
 <body>
-<nav>
-  <button class="menu-toggle">☰</button>
-  <div class="menu">
-    <button onclick="showSection('perfil', event)">Perfil</button>
-    <button onclick="showSection('habilidades', event)">Habilidades</button>
-    <button onclick="showSection('experiencia', event)">Experiencia</button>
-    <button onclick="showSection('proyectos', event)">Proyectos</button>
-    <button onclick="showSection('formacion', event)">Formación</button>
-    <button onclick="showSection('contacto', event)">Contacto</button>
-  </div>
-</nav>
+  <nav>
+    <a class="menu-toggle">☰</a>
+    <div class="menu">
+      <a class="a2" href="#perfil">Perfil</a>
+      <a class="a2" href="#habilidades">Habilidades</a>
+      <a class="a2" href="#experiencia">Experiencia</a>
+      <a class="a2" href="#proyectos">Proyectos</a>
+      <a class="a2" href="#formacion">Formación</a>
+      <a class="a2" href="#contacto">Contacto</a>
+    </div>
+  </nav>
 
 
   <header>
     <h1>Santiago Ramírez Hurtado</h1>
     <p>Desarrollador Backend y Frontend Jr. | Bogotá, Colombia</p>
   </header>
+  <div class="contenido1">
+    <section id="perfil">
+      <div class="contenido">
+        <h2>Perfil Profesional</h2>
+        <p>
+          Técnico en programación de software con formación universitaria en curso (Ingeniería de Sistemas, Universidad
+          Central). Experiencia en desarrollo backend y fullstack utilizando tecnologías como Node.js, Express, MySQL,
+          JavaScript, React, y Next.js. Enfoque en el desarrollo de APIs RESTful, soluciones modulares, escalables y
+          orientadas a resultados.
+          Habilidades en trabajo colaborativo, metodologías ágiles (Scrum), comunicación asertiva y pensamiento
+          analítico.
+          Busco contribuir con soluciones innovadoras y eficientes en entornos reales de desarrollo.
+        </p>
+      </div>
+    </section>
 
-  <section id="perfil" class="active">
-  <div class="contenido">
-    <h2>Perfil Profesional</h2>
-    <p>
-      Técnico en programación de software con formación universitaria en curso (Ingeniería de Sistemas, Universidad Central). Experiencia en desarrollo backend y fullstack utilizando tecnologías como Node.js, Express, MySQL, JavaScript, React, y Next.js. Enfoque en el desarrollo de APIs RESTful, soluciones modulares, escalables y orientadas a resultados.
-Habilidades en trabajo colaborativo, metodologías ágiles (Scrum), comunicación asertiva y pensamiento analítico. Busco contribuir con soluciones innovadoras y eficientes en entornos reales de desarrollo.
-    </p>
+    <section id="habilidades">
+      <div class="contenido">
+        <h2>Habilidades Técnicas</h2>
+        <ul>
+          <li>Node.js, Express</li>
+          <li>MySQL</li>
+          <li>JavaScript</li>
+          <li>React, Next.js</li>
+          <li>HTML, CSS</li>
+          <li>Git y control de versiones</li>
+        </ul>
+        <h2>Habilidades Blandas</h2>
+        <ul>
+          <li>Pensamiento crítico</li>
+          <li>Comunicación asertiva</li>
+          <li>Trabajo en equipo</li>
+          <li>Proactividad</li>
+          <li>Gestión del tiempo</li>
+          <li>Adaptabilidad</li>
+          <li>Aprendizaje continuo</li>
+        </ul>
+      </div>
+    </section>
   </div>
-  </section>
-
-  <section id="habilidades">
-  <div class="contenido">
-    <h2>Habilidades Técnicas</h2>
-    <ul>
-      <li>Node.js, Express</li>
-      <li>MySQL</li>
-      <li>JavaScript</li>
-      <li>React, Next.js</li>
-      <li>HTML, CSS</li>
-      <li>Git y control de versiones</li>
-    </ul>
-    <h2>Habilidades Blandas</h2>
-    <ul>
-      <li>Pensamiento crítico</li>
-      <li>Comunicación asertiva</li>
-      <li>Trabajo en equipo</li>
-      <li>Proactividad</li>
-      <li>Gestión del tiempo</li>
-      <li>Adaptabilidad</li>
-      <li>Aprendizaje continuo</li>
-    </ul>
-  </div>
-  </section>
-
-  <section id="experiencia">
-  <div class="contenido">
-    <h2>Experiencia Profesional</h2>
-    <p><strong>Practicante técnico en desarrollo de software – SENA (FXA)</strong></p>
-    <p><strong>Fecha (octubre/2023 – marzo/2024)</strong></p>
-    <ul>
-      <li>Desarrollo de sistema backend de gestión de actas de entrega con firma digital.</li>
-      <li>Optimización de entrega de dispositivos reduciendo errores de documentación.</li>
-      <li>Reemplazo de software inestable por solución escalable con dashboard y seguimiento.</li>
-      <li>Responsable del backend y la arquitectura escalable del sistema.</li>
-    </ul>
-  </div>
-  </section>
-
-  <section id="proyectos">
-  <div class="contenido">
-    <h2>Proyectos Personales</h2>
-    <p><strong>Tienda online tipo marketplace (en desarrollo)</strong></p>
-    <ul>
-      <li>Frontend en React y Next.js con diseño adaptativo y rápido.</li>
-      <li>Arquitectura modular y escalable para integración con backend y pagos.</li>
-      <li>Aplicación de buenas prácticas UX y rendimiento.</li>
-    </ul>
-  </div>
-  </section>
-
-  <section id="formacion">
-  <div class="contenido">
-    <h2>Formación Académica</h2>
-    <ul>
-      <li>Ingeniería de Sistemas (en curso) – Universidad Central</li>
-      <li>Técnico en Programación de Software – SENA</li>
-      <li>Diplomado en Desarrollo de Aplicaciones Móviles</li>
-    </ul>
-    <h2>Idiomas</h2>
-    <ul>
-      <li>Español: Nativo</li>
-      <li>Inglés: A2 (en proceso de mejora)</li>
-    </ul>
-  </div>
-  </section>
-
-  <section id="contacto">
-  <div class="contenido">
-    <h2>Contacto</h2>
-    <p>Email: santiagoramirezh@hotmail.com</p>
-    <p>Tel: 302 397 0523</p>
-    <p>Ubicación: Bogotá, Colombia</p>
-    <a href="https://www.linkedin.com/in/santiago-ram%C3%ADrez-hurtado-31b3b9300/">Linkedin</a>
-  </div>
-  </section>
 
   <div class="swiper">
-  <!-- Slides -->
-  <div class="swiper-wrapper">
-    <div class="swiper-slide">
-      <a href="" class="card-link">
-        <img src="img/react.png" alt="" class="card-image">
-        <p class="badge">Developer</p>
-        <h2 class="card-title">x</h2>
-        <button class="card-button material-symbols-outlined">arrow_forward</button>
-      </a>
-    </div>
+    <!-- Slides -->
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <a href="https://www.linkedin.com/in/santiago-ram%C3%ADrez-hurtado-31b3b9300/" class="card-link">
+          <img src="img/linkedin.png" alt="" class="card-image">
+          <p class="badge">Contacto</p>
+          <h2 class="card-title">Mi linkedin</h2>
+          <button class="card-button material-symbols-outlined">arrow_forward</button>
+        </a>
+      </div>
 
-    <div class="swiper-slide">
-      <a href="" class="card-link">
-        <img src="img/mysql.png" alt="" class="card-image">
-        <p class="badge">Developer</p>
-        <h2 class="card-title">x</h2>
-        <button class="card-button material-symbols-outlined">arrow_forward</button>
-      </a>
-    </div>
+      <div class="swiper-slide">
+        <a href="./making.html" class="card-link">
+          <img src="img/mysql.png" alt="" class="card-image">
+          <p class="badge">Developer</p>
+          <h2 class="card-title">Bases de datos</h2>
+          <button class="card-button material-symbols-outlined">arrow_forward</button>
+        </a>
+      </div>
 
-    <div class="swiper-slide">
-      <a href="" class="card-link">
-        <img src="img/node.png" alt="" class="card-image">
-        <p class="badge">Developer</p>
-        <h2 class="card-title">x</h2>
-        <button class="card-button material-symbols-outlined">arrow_forward</button>
-      </a>
-    </div>
+      <div class="swiper-slide">
+        <a href="./making.html" class="card-link">
+          <img src="img/node.png" alt="" class="card-image">
+          <p class="badge">Developer</p>
+          <h2 class="card-title">Proyectos con Node</h2>
+          <button class="card-button material-symbols-outlined">arrow_forward</button>
+        </a>
+      </div>
 
-    
-    <div class="swiper-slide">
-      <a href="" class="card-link">
-        <img src="img/react.png" alt="" class="card-image">
-        <p class="badge">Developer</p>
-        <h2 class="card-title">X</h2>
-        <button class="card-button material-symbols-outlined">arrow_forward</button>
-      </a>
-    </div>
+      <div class="swiper-slide">
+        <a href="./making.html" class="card-link">
+          <img src="img/react.png" alt="" class="card-image">
+          <p class="badge">Developer</p>
+          <h2 class="card-title">Proyectos con React</h2>
+          <button class="card-button material-symbols-outlined">arrow_forward</button>
+        </a>
+      </div>
 
-    <div class="swiper-slide">
-      <a href="" class="card-link">
-        <img src="img/mysql.png" alt="" class="card-image">
-        <p class="badge">Developer</p>
-        <h2 class="card-title">X</h2>
-        <button class="card-button material-symbols-outlined">arrow_forward</button>
-      </a>
     </div>
-
-    <div class="swiper-slide">
-      <a href="" class="card-link">
-        <img src="img/node.png" alt="" class="card-image">
-        <p class="badge">Developer</p>
-        <h2 class="card-title">X</h2>
-        <button class="card-button material-symbols-outlined">arrow_forward</button>
-      </a>
-    </div>
-
-    <!-- Agrega más slides si deseas -->
+    <div class="swiper-pagination"></div>
   </div>
 
-  <!-- Paginación y botones -->
-  <div class="swiper-pagination"></div>
-  <div class="swiper-button-prev"></div>
-  <div class="swiper-button-next"></div>
-</div>
-<script>
-  /* para la animacion que no se vea brusca */
-  function showSection(id) {
-  const sections = document.querySelectorAll('section');
-  sections.forEach(sec => sec.classList.remove('active'));
+  <div class="contenido2">
+    <section id="experiencia">
+      <div class="contenido">
+        <h2>Experiencia Profesional</h2>
+        <p><strong>Practicante técnico en desarrollo de software – SENA (FXA)</strong></p>
+        <p><strong>Fecha (octubre/2023 – marzo/2024)</strong></p>
+        <ul>
+          <li>Desarrollo de sistema backend de gestión de actas de entrega con firma digital.</li>
+          <li>Optimización de entrega de dispositivos reduciendo errores de documentación.</li>
+          <li>Reemplazo de software inestable por solución escalable con dashboard y seguimiento.</li>
+          <li>Responsable del backend y la arquitectura escalable del sistema.</li>
+        </ul>
+      </div>
+    </section>
 
-  const target = document.getElementById(id);
-  target.classList.add('active');
+    <section id="proyectos">
+      <div class="contenido">
+        <h2>Proyectos Personales</h2>
+        <p><strong>Tienda online tipo marketplace (en desarrollo)</strong></p>
+        <ul>
+          <li>Frontend en React y Next.js con diseño adaptativo y rápido.</li>
+          <li>Arquitectura modular y escalable para integración con backend y pagos.</li>
+          <li>Aplicación de buenas prácticas UX y rendimiento.</li>
+        </ul>
+      </div>
+    </section>
+  </div>
 
-  // Hacer scroll suave hacia esa sección
-  setTimeout(() => {
-    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
-  }, 100); // Espera para que la animación CSS se aplique primero
-}
+  <div class="contenido3">
+    <section id="formacion">
+      <div class="contenido">
+        <h2>Formación Académica</h2>
+        <ul>
+          <li>Ingeniería de Sistemas (en curso) – Universidad Central</li>
+          <li>Técnico en Programación de Software – SENA</li>
+          <li>Diplomado en Desarrollo de Aplicaciones Móviles</li>
+        </ul>
+        <h2>Idiomas</h2>
+        <ul>
+          <li>Español: Nativo</li>
+          <li>Inglés: A2 (en proceso de mejora)</li>
+        </ul>
+      </div>
+    </section>
 
-  /* hace funcionar el desplegable cuando es responsivo */
-  const toggle = document.querySelector('.menu-toggle');
-  const menu = document.querySelector('.menu');
+    <section id="contacto">
+      <div class="contenido">
+        <h2>Contacto</h2>
+        <p>Email: santiagoramirezh@hotmail.com</p>
+        <p>Tel: 302 397 0523</p>
+        <p>Ubicación: Bogotá, Colombia</p>
+        <a href="https://www.linkedin.com/in/santiago-ram%C3%ADrez-hurtado-31b3b9300/">Linkedin</a>
+      </div>
+    </section>
+  </div>
 
-  toggle.addEventListener('click', () => {
-    menu.classList.toggle('open');
-  });
-  /* navegacion de la barra*/
-   function showSection(id, event) {
-  if (event) event.preventDefault();
+  <script>
+    /* menu */
+    const toggle = document.querySelector('.menu-toggle');
+    const menu = document.querySelector('.menu');
+    toggle.addEventListener('click', () => {
+      menu.classList.toggle('open');
+    });
+    /* animacion de scroll */
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        // Agrega animación si entra en pantalla
+        if (entry.isIntersecting) {
+          entry.target.classList.add('active');
+        } else {
+          // Quita animación si sale de pantalla
+          entry.target.classList.remove('active');
+        }
+      });
+    }, {
+      threshold: 0.1 // Se activa cuando el 10% de la sección está visible
+    });
 
-  const sections = document.querySelectorAll('section');
-  sections.forEach(sec => {
-    sec.classList.remove('active');
-    sec.style.display = 'none';
-  });
-
-  const target = document.getElementById(id);
-  target.style.display = 'block';
-
-  // Espera que el display se aplique para luego activar transición
-  setTimeout(() => {
-    target.classList.add('active');
-  }, 10);
-}
-
-
-
-
+    document.querySelectorAll('section').forEach(section => {
+      observer.observe(section);
+    });
   </script>
+
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script src="script.js"></script>
 </body>
+
 </html>
