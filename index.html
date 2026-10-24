@@ -1,213 +1,170 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=arrow_forward" />
-  <title>Portafolio de Santiago Ramírez Hurtado</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portafolio de Santiago Ramírez Hurtado, desarrollador backend y frontend junior en Bogotá, Colombia.">
+  <title>Santiago Ramírez Hurtado | Desarrollador Backend y Frontend Jr.</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500..800&family=Inter:wght@400;500;600&display=swap">
   <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
 </head>
-
 <body>
-  <nav>
-    <a class="menu-toggle">☰</a>
-    <div class="menu">
-      <a class="a2" href="#perfil">Perfil</a>
-      <a class="a2" href="#habilidades">Habilidades</a>
-      <a class="a2" href="#experiencia">Experiencia</a>
-      <a class="a2" href="#proyectos">Proyectos</a>
-      <a class="a2" href="#formacion">Formación</a>
-      <a class="a2" href="#contacto">Contacto</a>
+  <nav class="nav" aria-label="Principal">
+    <div class="wrap">
+      <a class="brand" href="#inicio">Santiago Ramírez</a>
+      <button class="menu-toggle" aria-expanded="false" aria-controls="menu" aria-label="Abrir menú">Menú</button>
+      <div class="menu" id="menu">
+        <a href="#perfil">Perfil</a>
+        <a href="#habilidades">Habilidades</a>
+        <a href="#experiencia">Experiencia</a>
+        <a href="#proyectos">Proyectos</a>
+        <a href="#formacion">Formación</a>
+        <a href="#contacto">Contacto</a>
+      </div>
     </div>
   </nav>
 
+  <main>
+    <header class="hero" id="inicio">
+      <div class="wrap">
+        <h1>Santiago Ramírez Hurtado</h1>
+        <p class="role">Desarrollador Backend y Frontend Jr.</p>
+        <p class="lead">Desarrollo aplicaciones web escalables y APIs REST con React, Next.js, Node.js y MySQL. Estudio Ingeniería de Sistemas y vivo en Bogotá, Colombia.</p>
+        <div class="actions">
+          <a class="btn btn-primary" href="#proyectos">Ver proyectos</a>
+          <a class="btn btn-ghost" href="#contacto">Escríbeme</a>
+          <a class="btn btn-ghost" href="https://github.com/Santiago17RH" target="_blank" rel="noopener">GitHub</a>
+        </div>
+      </div>
+    </header>
 
-  <header>
-    <h1>Santiago Ramírez Hurtado</h1>
-    <p>Desarrollador Backend y Frontend Jr. | Bogotá, Colombia</p>
-  </header>
-  <div class="contenido1">
-    <section id="perfil">
-      <div class="contenido">
-        <h2>Perfil Profesional</h2>
-        <p>
-          Técnico en programación de software con formación universitaria en curso (Ingeniería de Sistemas, Universidad
-          Central). Experiencia en desarrollo backend y fullstack utilizando tecnologías como Node.js, Express, MySQL,
-          JavaScript, React, y Next.js. Enfoque en el desarrollo de APIs RESTful, soluciones modulares, escalables y
-          orientadas a resultados.
-          Habilidades en trabajo colaborativo, metodologías ágiles (Scrum), comunicación asertiva y pensamiento
-          analítico.
-          Busco contribuir con soluciones innovadoras y eficientes en entornos reales de desarrollo.
-        </p>
+    <section class="logos" aria-label="Tecnologías con las que trabajo">
+      <div class="wrap"><p>Tecnologías con las que trabajo</p></div>
+      <div class="marquee">
+        <div class="marquee-group">
+          <img src="img/node.png" alt="Node.js" height="44">
+          <img src="img/react.png" alt="React" height="44">
+          <img src="img/mysql.png" alt="MySQL" height="44">
+          <img src="img/python.png" alt="Python" height="44">
+        </div>
       </div>
     </section>
 
-    <section id="habilidades">
-      <div class="contenido">
-        <h2>Habilidades Técnicas</h2>
-        <ul>
-          <li>Node.js, Express</li>
-          <li>MySQL</li>
-          <li>JavaScript</li>
-          <li>React, Next.js</li>
-          <li>HTML, CSS</li>
-          <li>Git y control de versiones</li>
-        </ul>
-        <h2>Habilidades Blandas</h2>
-        <ul>
-          <li>Pensamiento crítico</li>
-          <li>Comunicación asertiva</li>
-          <li>Trabajo en equipo</li>
-          <li>Proactividad</li>
-          <li>Gestión del tiempo</li>
-          <li>Adaptabilidad</li>
-          <li>Aprendizaje continuo</li>
-        </ul>
-      </div>
-    </section>
-  </div>
-
-  <div class="swiper">
-    <!-- Slides -->
-    <div class="swiper-wrapper">
-      <div class="swiper-slide">
-        <a href="https://www.linkedin.com/in/santiago-ram%C3%ADrez-hurtado-31b3b9300/" class="card-link">
-          <img src="img/linkedin.png" alt="" class="card-image">
-          <p class="badge">Contacto</p>
-          <h2 class="card-title">Mi linkedin</h2>
-          <button class="card-button material-symbols-outlined">arrow_forward</button>
-        </a>
-      </div>
-
-      <div class="swiper-slide">
-        <a href="./making.html" class="card-link">
-          <img src="img/mysql.png" alt="" class="card-image">
-          <p class="badge">Developer</p>
-          <h2 class="card-title">Bases de datos</h2>
-          <button class="card-button material-symbols-outlined">arrow_forward</button>
-        </a>
-      </div>
-
-      <div class="swiper-slide">
-        <a href="./making.html" class="card-link">
-          <img src="img/node.png" alt="" class="card-image">
-          <p class="badge">Developer</p>
-          <h2 class="card-title">Proyectos con Node</h2>
-          <button class="card-button material-symbols-outlined">arrow_forward</button>
-        </a>
-      </div>
-
-      <div class="swiper-slide">
-        <a href="./making.html" class="card-link">
-          <img src="img/react.png" alt="" class="card-image">
-          <p class="badge">Developer</p>
-          <h2 class="card-title">Proyectos con React</h2>
-          <button class="card-button material-symbols-outlined">arrow_forward</button>
-        </a>
-      </div>
-
-      <div class="swiper-slide">
-        <a href="./making.html" class="card-link">
-          <img src="img/python.png" alt="" class="card-image">
-          <p class="badge">Developer</p>
-          <h2 class="card-title">Proyectos con Python</h2>
-          <button class="card-button material-symbols-outlined">arrow_forward</button>
-        </a>
-      </div>
-
-    </div>
-    <div class="swiper-pagination"></div>
-  </div>
-
-  <div class="contenido2">
-    <section id="experiencia">
-      <div class="contenido">
-        <h2>Experiencia Profesional</h2>
-        <p><strong>Practicante técnico en desarrollo de software – SENA (FXA)</strong></p>
-        <p><strong>Fecha (octubre/2023 – marzo/2024)</strong></p>
-        <ul>
-          <li>Desarrollo de sistema backend de gestión de actas de entrega con firma digital.</li>
-          <li>Optimización de entrega de dispositivos reduciendo errores de documentación.</li>
-          <li>Reemplazo de software inestable por solución escalable con dashboard y seguimiento.</li>
-          <li>Responsable del backend y la arquitectura escalable del sistema.</li>
-        </ul>
+    <section class="section" id="perfil">
+      <div class="wrap">
+        <h2>Perfil</h2>
+        <div class="body">
+          <p>Estudiante de Ingeniería de Sistemas en la Universidad Central y técnico en programación de software, con experiencia práctica en desarrollo fullstack con React, Next.js, Node.js, Express y MySQL.</p>
+          <p>Me enfoco en construir aplicaciones web escalables, APIs REST e interfaces modernas y responsivas. Trabajo en equipos ágiles con Scrum, resuelvo problemas con método y busco aprender de cada proyecto para entregar resultados.</p>
+        </div>
       </div>
     </section>
 
-    <section id="proyectos">
-      <div class="contenido">
-        <h2>Proyectos Personales</h2>
-        <p><strong>Tienda online tipo marketplace (en desarrollo)</strong></p>
-        <ul>
-          <li>Frontend en React y Next.js con diseño adaptativo y rápido.</li>
-          <li>Arquitectura modular y escalable para integración con backend.</li>
-          <li>Aplicación de buenas prácticas UX y rendimiento.</li>
-        </ul>
-      </div>
-    </section>
-  </div>
-
-  <div class="contenido3">
-    <section id="formacion">
-      <div class="contenido">
-        <h2>Formación Académica</h2>
-        <ul>
-          <li>Ingeniería de Sistemas (en curso) – Universidad Central</li>
-          <li>Técnico en Programación de Software – SENA</li>
-          <li>Diplomado en Desarrollo de Aplicaciones Móviles – Universidad Nacional de Colombia</li>
-        </ul>
-        <h2>Idiomas</h2>
-        <ul>
-          <li>Español: Nativo</li>
-          <li>Inglés: A2 (en proceso de mejora)</li>
-        </ul>
+    <section class="section" id="habilidades">
+      <div class="wrap">
+        <h2>Habilidades</h2>
+        <div class="body">
+          <h3>Técnicas</h3>
+          <dl class="skills">
+            <div><dt>Lenguajes</dt><dd><ul class="chips"><li>JavaScript</li><li>Python</li><li>HTML</li><li>CSS</li><li>PHP</li><li>Kotlin</li></ul></dd></div>
+            <div><dt>Frontend</dt><dd><ul class="chips"><li>React.js</li><li>Next.js</li><li>Diseño responsive</li><li>Consumo de APIs</li></ul></dd></div>
+            <div><dt>Backend</dt><dd><ul class="chips"><li>Node.js</li><li>Express.js</li><li>APIs RESTful</li><li>JWT</li><li>Validación de datos</li><li>Manejo de errores</li></ul></dd></div>
+            <div><dt>Bases de datos</dt><dd><ul class="chips"><li>MySQL</li><li>SQL</li><li>MongoDB</li><li>Diseño relacional y no relacional</li></ul></dd></div>
+            <div><dt>Herramientas</dt><dd><ul class="chips"><li>Git</li><li>GitHub</li><li>Postman</li><li>Trello</li><li>AWS</li><li>Scrum</li></ul></dd></div>
+          </dl>
+          <h3>Blandas</h3>
+          <ul class="chips accent">
+            <li>Pensamiento crítico</li><li>Comunicación asertiva</li><li>Trabajo en equipo</li>
+            <li>Proactividad</li><li>Gestión del tiempo</li><li>Adaptabilidad</li><li>Aprendizaje continuo</li>
+          </ul>
+        </div>
       </div>
     </section>
 
-    <section id="contacto">
-      <div class="contenido">
+    <section class="section" id="experiencia">
+      <div class="wrap">
+        <h2>Experiencia</h2>
+        <div class="body">
+          <article class="item">
+            <p class="date">Oct 2023 – Mar 2024</p>
+            <div>
+              <h3>Practicante técnico en desarrollo de software</h3>
+              <p class="org">SENA (FXA)</p>
+              <ul>
+                <li>Desarrollé un sistema backend para gestionar actas de entrega con firma digital, lo que optimizó procesos logísticos y redujo errores operativos.</li>
+                <li>Implementé funciones de seguimiento de paquetes y organización de despachos entre bodegas y tiendas.</li>
+                <li>Construí un dashboard interactivo para visualizar y controlar los procesos logísticos.</li>
+                <li>Participé en el desarrollo backend con foco en escalabilidad, estabilidad y mantenimiento eficiente.</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="proyectos">
+      <div class="wrap">
+        <h2>Proyectos</h2>
+        <div class="body">
+          <article class="project">
+            <p class="status">En desarrollo</p>
+            <h3>Plataforma e-commerce</h3>
+            <p>Tienda online con filtrado dinámico por categorías y subcategorías. Su arquitectura modular está preparada para autenticación y manejo de roles, y la interfaz se adapta a distintos dispositivos.</p>
+            <ul class="chips"><li>React.js</li><li>Next.js</li></ul>
+          </article>
+
+          <article class="project">
+            <h3>Aplicación de procesamiento de datos</h3>
+            <p>Aplicación en Python que lee, procesa y transforma datos de archivos Excel. Mejora la visualización de la información y agiliza la búsqueda y el análisis.</p>
+            <ul class="chips"><li>Python</li><li>Excel</li></ul>
+          </article>
+
+          <a class="more" href="https://github.com/Santiago17RH" target="_blank" rel="noopener">Ver más en GitHub</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="formacion">
+      <div class="wrap">
+        <h2>Formación</h2>
+        <div class="body">
+          <ul class="plain">
+            <li><strong>Ingeniería de Sistemas (en curso)</strong><span>Universidad Central</span></li>
+            <li><strong>Técnico en Programación de Software</strong><span>SENA</span></li>
+            <li><strong>Diplomado en Desarrollo de Aplicaciones Móviles</strong><span>Universidad Nacional de Colombia</span></li>
+          </ul>
+          <h3>Idiomas</h3>
+          <ul class="plain">
+            <li><strong>Español</strong><span>Nativo</span></li>
+            <li><strong>Inglés</strong><span>B1 (en curso)</span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="contacto">
+      <div class="wrap">
         <h2>Contacto</h2>
-        <p>Email: santiagoramirezh@hotmail.com</p>
-        <p>Tel: 302 397 0523</p>
-        <p>Ubicación: Bogotá, Colombia</p>
-        <a href="https://www.linkedin.com/in/santiago-ram%C3%ADrez-hurtado-31b3b9300/">Linkedin</a>
+        <div class="body">
+          <p>¿Tienes una vacante o un proyecto? Escríbeme y respondo pronto.</p>
+          <a class="email" href="mailto:santiagoramirezh@hotmail.com">santiagoramirezh@hotmail.com</a>
+          <ul class="plain">
+            <li><strong>Teléfono</strong><a href="tel:+573023970523">302 397 0523</a></li>
+            <li><strong>GitHub</strong><a href="https://github.com/Santiago17RH" target="_blank" rel="noopener">github.com/Santiago17RH</a></li>
+            <li><strong>LinkedIn</strong><a href="https://www.linkedin.com/in/santiago-ram%C3%ADrez-hurtado-31b3b9300/" target="_blank" rel="noopener">Santiago Ramírez Hurtado</a></li>
+            <li><strong>Ubicación</strong><span>Bogotá, Colombia</span></li>
+          </ul>
+        </div>
       </div>
     </section>
-  </div>
+  </main>
 
-  <script>
-    /* menu */
-    const toggle = document.querySelector('.menu-toggle');
-    const menu = document.querySelector('.menu');
-    toggle.addEventListener('click', () => {
-      menu.classList.toggle('open');
-    });
-    /* animacion de scroll */
-    const observer = new IntersectionObserver(entries => {
-      entries.forEach(entry => {
-        // Agrega animación si entra en pantalla
-        if (entry.isIntersecting) {
-          entry.target.classList.add('active');
-        } else {
-          // Quita animación si sale de pantalla
-          entry.target.classList.remove('active');
-        }
-      });
-    }, {
-      threshold: 0.1 // Se activa cuando el 10% de la sección está visible
-    });
+  <footer class="footer">
+    <div class="wrap"><p>© 2026 Santiago Ramírez Hurtado</p></div>
+  </footer>
 
-    document.querySelectorAll('section').forEach(section => {
-      observer.observe(section);
-    });
-  </script>
-
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script src="script.js"></script>
 </body>
-
-
 </html>
-
